@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul>.orange {
+            color: orange;
+        }
+
+        div>ul>li{
+            font-weight: bold;
+        }
+
+        div>ul>li>ol{
+            color: yellow;
+        }
+    </style>
+
+
+</head>
+<!-- (>)가 자식 상속자  직속 자식만 가능 자식의 자식은 안됨
+ 부모의 폰트의 성질을 자식이 물려받음 굳이 안에까지 지목해줄 필요 없음 -->
+
+<body>
+
+    <h1>안녕안녕~</h1>
+    <div>
+        <ul>
+            <li>사과
+                <ol>
+                    <li>1번째</li>
+                    <li>2번째</li>
+                    <li>3번째</li>
+                </ol>
+            </li>
+            <li class="orange">오렌지</li>
+            <li>딸기
+                <ol>
+                    <li>1번째</li> <!-- ct + sp + en 단체 자동완성가능-->
+                    <li>2번째</li>
+                    <li>3번째</li>
+                </ol>
+
+            </li>
+        </ul>
+    </div>
+    <div>당근</div>
+    <p>토마토</p>
+    <span class="orange">오렌지</span>
+
+
+
+
+</body>
+
+</html>
