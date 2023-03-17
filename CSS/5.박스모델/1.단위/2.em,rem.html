@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+
+html{
+    font-size: 10px;
+}
+        body *{
+            border: 2px solid black;
+        }
+
+        .container {
+            font-size: 20px;
+            width: 60em;
+        }
+        .parent{
+            width: 50%;
+            font-size: 2em;
+        }
+        .child{
+            width: 30%;
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- em-> 자기자신의 폰트사이즈, 몇배 따라간다는뜻, %는 부모   rem-> html폰트사이즈 건들면
+    곱하기로  -->
+
+
+
+    <div class="container">Container
+        <div class="parent">Parent
+            <div class="child">Chil1</div>
+            <div class="child">Chil2</div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
