@@ -9,68 +9,142 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
 
     <style>
-     section{
-        width: 1050px;
-        height: 700px;
-        background-color: rgb(180, 171, 171);
-        margin: 10px;
-     }
-     h1{
-        font-size: 50px;
-        font-family:sans-serif;
-        text-align: center;
-        background-color: rgb(184, 176, 176);
-        margin: 10px;
-     }
-     .intro{
-        font-size: 20px;
-        color: white;
-        width: 1050px;
-        height: 40px ;
-        background: rgb(34, 25, 14);
-        text-align: center;
-     }
-     em{
-        color: yellow;
+        section {
+            width: 1050px;
+            height: 700px;
+            background-color: grayaz;
+            border: 3px double #123456;
+            margin: 20px auto 0;
+            color: #333
+        }
 
-     }
+        h1 {
+            font-size: 50px;
+            font-family: sans-serif;
+            text-align: center;
+            background-color: rgb(184, 176, 176);
+            letter-spacing: 10px;
+            margin: 10px;
+            padding: 20px;
+        }
 
-     #tulip{
+        .intro {
+            font-size: 20px;
+            color: white;
+            width: 1050px;
+            height: 30px;
+            background: rgb(34, 25, 14);
+            border-bottom: 3px solid gray;
+            padding: 10px;
+            text-align: center;
+        }
+
+        em {
+            color: yellow;
+
+        }
+
+        section .gallery {
+            background: #6e6a6a;
+            padding: 20px 0;
+        }
+
+        section .gallery li {
+            width: 23.75%;
+            height: 330px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            box-sizing: border-box;
+            margin-right: 1%;
+            float: left;
+
+
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .gallery li h2 {
+            height: 150px;
+            border: 1px solid lightgray;
+            background: #fff;
+        }
+
+        #tulip {
+            background-color: red;
+
+        }
+
+        #tulip h2 {
+            background-image: url(./img/tulip.jpg);
+            background-size: cover;
+            background-position: 40%;
+            background-repeat: no-repeat;
+
+
+        }
+        #jebi{
+            background: pink;
+
+        }
+        #jebi h2{
+            background: url(./img/jebi.jpg)no-repeat 40% cover;
+
+        }
+        #hobak{
+            background: orange;
+
+        }
+        #hobak h2{
+            background: url(./img/hobak.jpg) no-repeat 20%  cover ;
+        }
+
+        #sunflower{
+            background: yellow ;
+
+        }
+
+        #sunflower h2{
+            background: url();
+        }
+        /* #tulip{
         width: 250px;
-        height: 400px;
-        background: red;
+        height: 500px;
+        background: red url(./img/tulip.jpg) no-repeat top/200px 200px;
         float: left;
         margin: 5px;
-        
-       
+        padding: 5px;
+
 
      }
 
      #jedi{
         width: 250px;
-        height: 400px;
-        background: pink;
+        height: 500px;
+        background: pink url(./img/jebi.jpg) no-repeat top/200px 200px;
         float: left;
         margin: 5px;
      }
         
      #hodak{
         width: 250px;
-        height: 400px;
-        background: orange;
+        height: 500px;
+        background: orange url(./img/hobak.jpg) no-repeat top/200px 200px;
         float: left;
         margin: 5px;
      }
         
      #sunflower{
         width: 250px;
-        height: 400px;
-        background: yellow;
+        height: 500px;
+        background: yellow url(./img/sunflower.jpg) no-repeat top/200px 200px;
         float: right;
         margin: 5px;
      }
-     
-
+      */
     </style>
 
 </head>
@@ -78,7 +152,7 @@
 <body>
     <section>
         <h1>나의 아름다운 정원</h1>
-        <p class="intro">
+        <p class="intro clearfix">
             "사람들은 아마 자신에게" <em>자신감을 북듣워 주는</em>
             "표정있는 꽃들을 선호할 것이다."
         </p>

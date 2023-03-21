@@ -1,0 +1,172 @@
+
+@import url('../../comom.css');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+
+
+/* base style */
+body{
+    background: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    font-family: '굴림',serif
+}
+#wrapper{
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* header style */
+header{
+    background: #123456;
+    padding: 10px;
+    color: #fff;
+}
+header h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: #cc0;
+    text-align: center;
+    font-family: 'jua',cursive;
+
+}
+
+header h1 strong{
+    font-size: 3em;
+    color: #fff;
+
+}
+
+header h1 span{
+    font-size: 1.5em;
+}
+
+header h1 em{
+    font-size: 2em;
+    color: #ccc;
+}
+
+/* end header style */
+
+
+/*degin   */
+.container{
+    background: #ccc;
+
+}
+ .container .menu{
+    float: left;
+    width: 20%;
+    padding: 20px;
+ }
+
+
+.container .menu li{
+    margin-bottom: 8px;
+    text-decoration: underline;
+}
+
+
+.container .menu li a:hover{
+    color: #662;
+    border-bottom: 1px dashed rgb(39, 58, 21);
+}
+.container .content{
+    background: #fff;
+    float: right;
+    width: 80%;
+ }
+
+
+.container .content h2{
+    background: #800;
+    color: #ee0;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 5px 20px;
+    font-family: '궁서',cursive;
+}
+
+.container .content p{
+    padding: 20px;
+    text-align: justify;
+}
+ /* footer sryl */
+
+ footer{
+    background: #aaa;
+    padding: 10px 20px;
+ }
+
+ footer address{
+    color: #000;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+header h1{
+    font-size: 30px;
+    font-weight: 700;
+    color:yellow;
+    text-align: center;
+    font-family: 'jua-Regular'
+} 
+
+h1{
+   
+
+    background-color: rgb(50, 50, 141);
+}
+
+h1 strong{
+    font-size: 100px;
+    color: white;
+}
+
+h1 span{
+    font-size: 40px;
+    color: yellow;
+}
+
+h1 em{
+    font-size: 60px;
+    color: rgb(191, 188, 201);
+}
+
+.menu{
+   width: 200px;
+   height: 250px;
+   color: gray;
+   line-height: normal;
+}
+
+.content{
+
+}
+
+.content h2{
+    background: red;
+    color: yellow;
+    font-size: 30px;
+
+} */
