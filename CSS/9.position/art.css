@@ -1,0 +1,486 @@
+
+@import url('../../comom.css');
+
+
+body{
+ font-size: 14px;
+ background: #aaa;
+}
+#wrapper{
+    width: 80%;
+    margin: 0 auto;    
+    background: #fff;
+}
+/* 가운데 정렬위해 마진 0 오토 씀 */
+
+header{
+    background: #fa0;
+    color: #fff;
+    text-align: center;
+
+}
+header h1{
+    font-size: 8em;
+    font-weight: bold;
+    padding: 10px;
+}
+header h1 span{
+    font-size: 20px;
+     display: block;
+     margin-top: 20px;
+}
+/* 스펜이 인라인 요소라서 디스플레이를 블록으로 줌 마진은 글씨를 떨어트려놓음 */
+
+header .stit{
+    background: #ccc;
+    color: #333;
+    padding:  5px 0;
+}
+/* 페딩은 좌우로 빵 영을줌 */
+
+ 
+.container > *{
+    float: left;
+}
+
+/* 전체를 지목해서 float을 왼쪽으로 둠 */
+
+.container .side-menu{
+    width: 25%;
+}
+ .container .side-menu h3{
+    font-size: 1.3em;
+    font-weight:  700;
+    color: #fff;
+    background: red;
+    padding: 10px;
+ }
+/* 글자굵기 font weight  */
+.container .side-menu ul{
+    margin-top: 5px;
+}
+
+.container .side-menu ul li{
+    padding: 10px;
+
+}
+
+
+.container .side-menu ul li a{
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* text-decoration: underline; 은 줄라인 밑에 라인 주는것 */
+
+.container .side-menu ul li:hover{
+    border-bottom: 1px dashed #000;
+}
+
+/* 밑에 줄 점선 */
+
+
+.container .main-content{
+    background: #ddd;
+    width: 50%;
+    color: #123456;
+}
+
+
+.container .main-content .art-piece{
+margin-top: 10px;
+font-size: 1.3em;
+font-weight: bold;
+padding: 10px;
+}
+/* 마진 탑은 무엇일까 */
+
+
+.container .main-content .art-piece .title{
+    color: #ddd;
+    background: #123456;
+    padding: 7px 5px;
+}
+/* padding 값매기는 거 다시 보기 */
+
+.container .main-content .art-piece .title a:hover{
+    text-decoration:underline;
+}
+
+.container .main-content .art-piece .artist{
+    margin: 20px 0;
+}
+/* 마진 비우ㅠㄹ다시보기  글씨 넓혀줌 */
+.container .main-content .art-piece .detail{
+font-size:  0.7em; 
+font-weight:400 ;
+}
+
+
+.container .banner{
+    width: 25%;
+    font-weight: 700 ;
+}
+
+.container .banner h3{
+    font-size: 1.7em;
+    color: #333;
+    padding: 20 10 ;
+}
+ .container .banner h3 span,
+ .container .banner h3 strong{
+
+    display: block;
+    margin-bottom: 10px;
+
+}
+ /* 일치 선택자 ,를 사용 한번에 선택 */
+ /* display: block; 인라인 요소를 블록 요소로 바꿔줌  */
+
+.container .banner h3 span
+{
+    text-decoration: underline;
+}
+/*   지목해서 밑줄그음 */
+
+.container .banner h3 .all{
+    color: #999;
+
+}
+
+.container .banner h3 .love{
+    color: #fa0;
+}
+.container .banner .link{
+    padding: 0 10px;
+}
+.container .banner .link .li{
+    margin-bottom:  15px;
+}
+ .container .banner .link li a{
+    display: block;
+    text-decoration: underline;
+    margin-bottom:  5px;
+    width: fit-content;
+ }
+
+/*  width: fit-content ; 이건 모르겠음 */
+
+
+.container .banner .link li span{
+    font-weight: 400;
+}
+
+
+
+.footer{
+    background: #123456;
+    padding: 10px;
+    font-weight: 700;
+    color: #eee;
+    text-align:center;
+} 
+
+.footer a{
+    text-decoration: underline;
+}
+
+
+
+/* 강사님이 쓰신거 */
+
+/*@import url(../../common.css);
+
+
+body {
+    font-size: 14px;
+    background: #aaa;
+}
+
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+}
+
+
+header {
+    background: #fa0;
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 8em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+header h1 span {
+    font-size: 20px;
+    display: block;
+    margin-top: 20px;
+}
+
+header .stit {
+    background: #ccc;
+    color: #333;
+    padding: 5px 0;
+}
+
+
+.container > * {
+    float: left;
+}
+
+
+.container .side-menu {
+    width: 25%;
+}
+
+.container .side-menu h3 {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #fff;
+    background: #900;
+    padding: 10px;
+}
+
+.container .side-menu ul {
+    margin-top: 5px;
+}
+
+.container .side-menu ul li {
+    padding: 10px;
+}
+
+.container .side-menu ul li a {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.container .side-menu ul li:hover {
+    border-bottom: 1px dashed #000;
+}
+
+
+.container .main-content {
+    background: #ddd;
+    width: 50%;
+    color: #123456;
+}
+
+.container .main-content .art-piece {
+    margin-top: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.container .main-content .art-piece .title {
+    color: #ddd;
+    background: #123456;
+    padding: 7px 5px;
+}
+
+.container .main-content .art-piece .title a:hover {
+    text-decoration: underline;
+}
+
+.container .main-content .art-piece .artist {
+    margin: 20px 0;
+}
+
+.container .main-content .art-piece .detail {
+    font-size: 0.7em;
+    font-weight: 400;
+}
+
+
+.container .banner {
+    width: 25%;
+    font-weight: 700;
+}
+
+.container .banner h3 {
+    font-size: 1.7em;
+    color: #333;
+    padding: 20px 10px;
+}
+
+.container .banner h3 span,
+.container .banner h3 strong {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container .banner h3 span {
+    text-decoration: underline;
+}
+
+.container .banner h3 .all {
+    color: #999;
+}
+
+.container .banner h3 .love {
+    color: #fa0;
+}
+
+.container .banner .link {
+    padding: 0 10px;
+}
+
+.container .banner .link li {
+    margin-bottom: 15px;
+}
+
+.container .banner .link li a {
+    display: block;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    width: fit-content;
+}
+
+.container .banner .link li span {
+    font-weight: 400;
+}
+
+
+footer {
+    background: #123456;
+    padding: 10px;
+    font-weight: 700;
+    color: #eee;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: underline;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 내가쓴거 */
+/* body{
+background: rgb(143, 138, 138);
+
+}
+
+
+
+
+header{
+    width: 1000opx;
+    height: 200px;
+    background: orange;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    
+}
+
+ h1{
+    font-size: 100px;
+    color: aliceblue;
+}
+h1 span{
+    font-size: 10px;
+    color: aliceblue;
+    background: fixed;
+}
+.srit{
+background:rgb(143, 138, 138); 
+text-align: center;
+color: black;
+float:unset;
+}
+
+
+
+.side-menu{
+ width: 300px;  
+ height: 700px;
+ background:  white;
+ color: black;
+ 
+ 
+ font-size: 20px;
+ float: left;
+ text-align: left;
+}
+.side-menu h3{
+    width: 300px;
+    height: 30px;
+    background: red;
+    color: white;
+    border: 1px rgb(231, 113, 113);
+}
+
+.main-content{
+    width: 550px;
+    height: 700px;
+    background:gray;
+    margin: 10px;
+    float:left
+
+
+
+}
+
+
+.title{
+    height: 30px;
+    background: rgb(23, 23, 61);
+    color: white;
+    margin: 10px 
+}
+
+
+
+
+.banner{
+    width: 300px;  
+    height: 700px;
+    background: white;
+    float: right;
+} */

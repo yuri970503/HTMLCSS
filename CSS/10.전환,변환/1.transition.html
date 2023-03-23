@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+            background: red;
+
+            /* transition-property:all;
+            transition-duration: 2s;
+            transition-delay: 2s; */
+
+
+            /* s는 초 단위 그리고 transition-property transition-duration 
+        써서 몇 초간 움직이는 거가능 all 은 모두다 라는뜻 transition-delay 2초뒤레 반응함  밑에는 단축 속성임*/
+
+        /* 속성 기속 시간 딜레이 타이밍 함수 */
+        /* transition: 1s  ease-in-out; */
+        
+	transition: transform 0.6s cubic-bezier(0.36, 0, 0.66, -0.56);
+
+        }
+        /* 남이 써놓은거 이용하면 됨 사이트 있음 참고 사이트 Easing 함수 차트 시트 https://easings.net/ko 임 */
+        
+        .box:hover{
+            width: 300px;
+            background:  skyblue;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+
+
+    <div class="box"></div>
+</body>
+</html>
